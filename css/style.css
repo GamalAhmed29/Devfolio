@@ -1,0 +1,313 @@
+
+body{
+    background-color: rgb(245, 245, 245);
+}
+
+:root{
+    --text-color:white;
+    --main-color:rgb(0, 120, 255);
+    --text-2:rgb(78, 78, 78);
+}
+.navbar{
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    right: 0;
+
+}
+
+
+.nav-item a{
+       color: white ;
+       padding: 10px !important;
+}
+.dropdown-menu a{
+    color: black !important;
+  
+}
+.nav-item::after{
+    position: absolute;
+    top: 55px;
+    margin-left:10px ;
+    content: "";
+    width: 0px;
+    height: 2px;
+    background-color: white;
+    transition: all 0.5s;
+}
+.nav-item:hover::after {
+    width: 40px;
+}
+.navbar-brand {
+    margin:0px 40px !important;
+    font-size: 30px !important;
+    line-height: 1.2 !important;
+}
+.home{
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    font-family: "Playwrite DE Grund", cursive;
+}
+.home-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+        align-items: center;
+    justify-content: center;
+}
+.home-content{
+    color: var(--text-color);
+   text-align: center;
+}
+.home .home-content h1{
+    font-size: 4.5rem;
+}
+#element{
+    font-size: 35px;
+}
+
+.about2{
+    background-color: var(--text-color);
+}
+.my-sub-title::after{
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    width: 89px;
+    height: 4px;
+    top: 830px;
+    left: 51%;
+
+}
+.skill span{
+    color: var(--text-2);
+    margin: 5px 0px;
+}
+.about-pragraphs{
+    margin-top: 30px;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.service-header h4{
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.service-header p{
+    color: var(--text-2);
+}
+.service-header::after{
+    content: " ";
+    position: absolute;
+    top: 100px;
+    left: 49%;
+    width: 50px;
+    height: 4px;
+    background-color: var(--main-color);
+}
+.servise-card {
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 1rem;
+    text-align: center;
+    border: none;
+    transition:all 2s ease-in-out !important;
+    margin-bottom: 0;
+    padding: 10px;
+    padding-bottom: 20px !important;
+    
+}
+.card-icon i{
+    position: relative;
+    color: #1e1e1e;
+    line-height: 1rem;
+    font-size: 40px;
+ 
+}
+.card-icon span::after{
+    content: "";
+    height: 100px;
+    width: 100px;
+    border: 10px solid var(--main-color);
+    position: absolute;
+    border-radius: 50%;
+    left: 110px;
+    top: -40px;
+    z-index: 1;
+}
+.servise-card:hover .card-icon span::after{
+    background-color: var(--main-color);
+    border: 10px solid #CDE1F8;
+    
+}
+.servise-card:hover .myIcon{
+    color: var(--text-color);
+    z-index: 5;
+    
+}
+.card-content h2{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+.card-content p{
+    color: var(--text-2);
+    text-align: center !important;
+    padding: 10px 5px 0px 5px;
+}
+.numbers{
+    background-image: url("../images/counters-bg.jpg");
+    position: relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.numbers-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--main-color);
+    opacity: 0.7;
+   
+}
+.number-box{
+    padding: 5rem 0;
+    color: white;
+}
+.number-icon{
+    font-size: 2rem;
+}
+.icon-postion::after{
+    position: absolute;
+    content: "";
+    height: 100px;
+    width: 100px;
+    border: 10px solid rgb(205, 225, 248);
+    border-radius: 50%;
+    left: 105px;
+    top: -25px;
+}
+.my-number{
+    font-size: 2rem;
+}
+.card{
+    border: 0;
+    cursor: pointer;
+}
+.card img{
+    transition: all 2s;
+}
+.card-image{
+    overflow: hidden;
+
+}
+.portfolio-card-icon{
+    color: var(--main-color);
+    font-size: 1.5rem;
+}
+.portfolio-card-icon::after{
+    content: "";
+    width: 35px;
+    height: 35px;
+    border: 2px solid var(--main-color);
+    position: absolute;
+    border-radius: 50%;
+    left: -7px;
+}
+.card:hover img{
+    transform: scale(1.5,1.5);
+    overflow: hidden;
+}
+.portfolio-card-content p{
+    color: var(--main-color);
+}
+.portfolio-card-content span{
+    color: black;
+}
+.testmonials{
+    background-image: url('../images/overlay-bg.jpg');
+    background-size: center center;
+    background-attachment: fixed;
+}
+.testmonialsleLayer{
+   background-color: rgba(0, 120, 255,0.7);
+    
+
+}
+.carousel-indicators{
+    top: 100%;
+}
+.carousel-indicators [data-bs-target] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.blog-card{
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card-category{
+    margin-bottom: 20px;
+}
+.category{
+    position: absolute;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    padding: 5px;
+    border-radius: 5px;
+    top: -35px;
+    left: 38%;
+    letter-spacing: 0.1px;
+    margin-bottom: 0;
+
+}
+.bolg-card-title{
+    padding: 0 15px 5px;
+    display: inline-block;
+    line-height: 25px;
+    overflow: hidden;
+    font-size: 1.3rem;
+    margin-top: 0.6rem
+    
+}
+.blog-card-paragapgh{
+    color: var(--text-2);
+    padding: 5px 10px 30px 10px;
+}
+.card-blog-footer{
+    border-top: 1px solid black;
+}
+.img-blog{
+    border-radius: 10px !important;
+}
+.person img{
+    width: 32px;
+    height: 32px;
+    margin: 5px 5px !important;
+
+}
+.bolg-name{
+    color: #1e1e1e;
+    text-transform: capitalize;
+}
+.bolg-name:hover{
+    color: var(--main-color);
+    cursor: pointer;
+}
+.date{
+    margin-right: 20px;
+}
+.contact-background{
+    background-image: url(../images/overlay-bg.jpg);
+    height: 80vh;
+
+}
